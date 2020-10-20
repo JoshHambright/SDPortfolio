@@ -1,0 +1,9 @@
+body{
+    background-color: black;
+
+}
+/* Scrolled Nav Bar color and transition */
+.navbar-fixed-top.scrolled {
+    background-color: black !important;
+    transition: background-color 200ms linear;
+  }

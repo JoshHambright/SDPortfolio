@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Josh Hambright - Software Developer</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Splash and Navigation -->
+    <div class="container-fluid" style="background-color: #333333; height: 1000px" id="splash">
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: transparent; border:none;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a href="#splash" class="navbar-brand">Josh Hambright</a>
+              </div>
+              <div >
+                <div class="collapse navbar-collapse" id="myNavbar" >
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#AboutMe">About Me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#ContactMe">Contact Me</a></li>
+                </ul>
+            </div>
+            <!-- Add Scroll spy to navigation-->
+        </nav>
+    </div>
+<!-- About me -->
+    <div id="AboutMe" class="container-fluid" style="background-color:gray; height: 500px">
+    &nbsp;
+    
+    </div>
+
+<!-- Skills -->
+<div id="Skills" class="container-fluid" style="background-color:slateblue; height:500px">
+    
+    
+</div>
+
+<!-- Portfolio -->
+<div id="Portfolio" class="container-fluid" style="background-color:slategray; height:500px">
+    
+    
+</div>
+
+<!-- Contact -->
+<div id="Contact" class="container-fluid" style="background-color:whitesmoke; height:500px">
+    
+    
+</div>
+
+<!-- Footer -->
+<div id="ContactMe" class="container-fluid" style="background-color:goldenrod; height:250px">
+    
+    
+</div>
+
+    <!-- Javascript for Scroll sticking to top and fading in-->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -12,69 +12,135 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Splash and Navigation -->
-    <div class="container-fluid" style="background-color: #333333; height: 1000px" id="splash">
-        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: transparent; border:none;">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a href="#splash" class="navbar-brand">Josh Hambright</a>
-              </div>
-              <div >
-                <div class="collapse navbar-collapse" id="myNavbar" >
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#AboutMe">About Me</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Portfolio">Portfolio</a></li>
-                    <li><a href="#ContactMe">Contact Me</a></li>
-                </ul>
+    <div class="container-fluid">
+        <!-- Splash and Navigation -->
+        <div class="container-fluid" style="background-color: #333333; " id="splash">
+            <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #333333DD; border:none;">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#splash" class="navbar-brand">Josh Hambright</a>
+                    </div>
+                    <div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#AboutMe">About Me</a></li>
+                                <li><a href="#Skills">Skills</a></li>
+                                <li><a href="#Portfolio">Portfolio</a></li>
+                                <li><a href="#ContactMe">Contact Me</a></li>
+                            </ul>
+                        </div>
+                        <!-- Add Scroll spy to navigation-->
+            </nav>
+            <div class="container">
+                <!-- <div class="introBG container"> -->
+                <div class="intro introBG">
+                    <h1 id="introName">Josh Hambright</h1>
+                    <p>Software devloper</p>
+                </div>
+                <!--</div>-->
             </div>
-            <!-- Add Scroll spy to navigation-->
-        </nav>
-    </div>
-<!-- About me -->
-    <div id="AboutMe" class="container-fluid" style="background-color:gray; height: 500px">
-    &nbsp;
-    
-    </div>
+        </div>
+        <!-- About me -->
+        <div id="AboutMe" class="container-fluid" style="background-color:#444444; padding-bottom: 30px">
+            <div class="container ">
+                <H1 style="text-align: center;">About Me</H1>
+                <div class="row align-items-center">
+                    <div class="col-sm-4" style="background:">Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Cumque minus vel, ducimus voluptatibus est optio sequi nobis magnam similique facere laborum,
+                        harum
+                        repudiandae. Aspernatur vel eaque enim, iste labore minus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis unde? Dolor ad fugiat, in
+                        odio ea reprehenderit est perspiciatis animi reiciendis dolore maiores earum incidunt, natus
+                        ipsam qui quis?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dicta sunt iure repellendus
+                        repellat qui, aut quidem voluptas illo consectetur similique necessitatibus natus quisquam
+                        veritatis ipsam blanditiis facilis ex magni!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit.
+                        Cumque minus vel, ducimus voluptatibus est optio sequi nobis magnam similique facere laborum,
+                        harum
+                        repudiandae. Aspernatur vel eaque enim, iste labore minus!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis unde? Dolor ad fugiat, in
+                        odio ea reprehenderit est perspiciatis animi reiciendis dolore maiores earum incidunt, natus
+                        ipsam qui quis?
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dicta sunt iure repellendus
+                        repellat qui, aut quidem voluptas illo consectetur similique necessitatibus natus quisquam
+                        veritatis ipsam blanditiis facilis ex magni!
+                    </div>
+                    <div class="col-sm-4 align-items-center" style="background:">Lorem ipsum dolor sit, amet consectetur
+                        adipisicing
+                        elit. Eligendi delectus sapiente tempora at nostrum aperiam dignissimos ea, commodi esse dolore
+                        doloremque sed nulla mollitia id omnis a voluptates exercitationem quia?</div>
+                    <div class="col-sm-4"><center><img src="assets/headshot.jpg" alt=""
+                            class="media-object content-justify-center headshot" style="width:300px"></center></div>
+                </div>
+            </div>
+        </div>
 
-<!-- Skills -->
-<div id="Skills" class="container-fluid" style="background-color:slateblue; height:500px">
-    
-    
-</div>
+        <!-- Skills -->
+        <div id="Skills" class="container-fluid" style="background-color: #555555; height:500px">
+            <div class="container">
+                <H1 style="text-align: center;">Skills</h1>
 
-<!-- Portfolio -->
-<div id="Portfolio" class="container-fluid" style="background-color:slategray; height:500px">
-    
-    
-</div>
+            </div>
 
-<!-- Contact -->
-<div id="Contact" class="container-fluid" style="background-color:whitesmoke; height:500px">
-    
-    
-</div>
+        </div>
 
-<!-- Footer -->
-<div id="ContactMe" class="container-fluid" style="background-color:goldenrod; height:250px">
-    
-    
-</div>
+        <!-- Portfolio -->
+        <div id="Portfolio" class="container-fluid" style="background-color:#666666; height:500px">
+            <div class="container">
+                <H1 style="text-align: center;">Portfolio</h1>
 
-    <!-- Javascript for Scroll sticking to top and fading in-->
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $(".navbar-fixed-top");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            </div>
+
+        </div>
+
+        <!-- Contact -->
+        <div id="ContactMe" class="container-fluid" style="background-color:#777777; height:500px">
+            <div class="container">
+                <H1 style="text-align: center;">Contact Me</h1>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div id="Footer" class="container-fluid" style="background-color:goldenrod; height:150px;">
+
+            <!-- <div class="row h-100 justify-content-center align-items-center"> -->
+            <center>
+                <div class=" footerContent ">
+                    <h4>&copy;2020 Josh Hambright</h4>
+                    <div class="footerIcons center">
+                        <a href="https://github.com/JoshHambright" target="new"><img src="assets/github.png"
+                                class="footerIMG"></a>
+
+
+                        <a href="https://www.linkedin.com/in/josh-hambright" target="new"> <img
+                                src="assets/linkedin.png" class="footerIMG"></a></div>
+                </div>
+            </center>
+            <!-- </div> -->
+
+
+        </div>
+
+        <!-- Javascript for Scroll sticking to top and fading in-->
+        <script>
+            $(function () {
+                $(document).scroll(function () {
+                    var $nav = $(".navbar-fixed-top");
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                });
             });
-        });
-    </script>
+        </script>
+    </div>
 </body>
 
 </html>

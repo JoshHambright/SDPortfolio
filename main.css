@@ -1,9 +1,66 @@
-body{
+body {
     background-color: black;
 
 }
+
 /* Scrolled Nav Bar color and transition */
 .navbar-fixed-top.scrolled {
     background-color: black !important;
-    transition: background-color 200ms linear;
+    transition      : background-color 200ms linear;
+}
+
+
+#splash {
+    background-image     : url("assets/hayloft.jpg");
+    /*background-size    : auto;
+    background-repeat    : no-repeat;
+
+    background-position  : left 0px;
+    background-attachment: fixed */
+    background-size      : contain;
+    background-repeat    : no-repeat;
+    width                : 100%;
+    height               : 0;
+    padding-top          : 75%;
+    /* (img-height / img-width * container-width) */
+}
+
+.intro {
+    text-align: center;
+    color     : white;
+}
+
+#introName {
+    text-align: center;
+    color     : white;
+ 
+
+}
+
+.introBG {
+    background: #333333DD;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: -75%;
+}
+
+.headshot{
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px black;
+    margin-top: 20px;
+}
+
+
+.footerContent{
+    margin-top: 50px;
+    position: relative;
+}
+
+.footerIMG{
+    width: 25px;
+}
+.Absolute-Center {
+    margin: 50% auto 50% auto;
+    position: relative;
   }

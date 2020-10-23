@@ -9,11 +9,11 @@ body {
 
 }
 
-/* Scrolled Nav Bar color and transition 
-.navbar-fixed-top.scrolled {
+/*Scrolled Nav Bar color and transition */
+.navbar-sticky-top.scrolled {
     background-color: black !important;
     transition      : background-color 200ms linear;
-}*/
+}
 
 
 /* #splash {
@@ -148,7 +148,8 @@ body {
 }
 
 .skillIcon{
-    width: 25px;
+    width: 40px;
+    margin-right: 5px;
 }
 .centerStuff{
     margin-right: auto;

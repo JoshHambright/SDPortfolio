@@ -45,6 +45,10 @@ body {
 #AboutMe{
     color:black;
 }
+#nameHeader{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 /* .introBG {
     background: #333333DD;
     border-radius: 10px;
@@ -56,7 +60,9 @@ body {
 .headshot{
     border-radius: 10px;
     box-shadow: 2px 4px 10px black;
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    max-width: 250px;
 }
 
 #portfolioCarousel{
@@ -133,4 +139,27 @@ body {
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+.card{
+    background: #464646dc;
+    border:0;
+}
+
+.skillIcon{
+    width: 25px;
+}
+.centerStuff{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.card-header{
+    text-align: center;
+}
+
+.skillLink, .skillLink a, .skillLink:hover{
+    font-size: 25px;
+    color: black;
 }

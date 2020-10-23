@@ -1,7 +1,11 @@
 body {
     background-color: black;
     font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
-
+    background-size      : auto;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    background-image     : url("assets/hayloft2.jpg");
 
 }
 
@@ -12,20 +16,20 @@ body {
 }*/
 
 
-#splash {
+/* #splash {
     background-image     : url("assets/hayloft2.jpg");
     /*background-size    : auto;
     background-repeat    : no-repeat;
 
     background-position  : left 0px;
-    background-attachment: fixed */
+    background-attachment: fixed 
     background-size      : contain;
     background-repeat    : no-repeat;
     width                : 100%;
     height               : 0;
     padding-top          : 75%;
-    /* (img-height / img-width * container-width) */
-}
+    /* (img-height / img-width * container-width) 
+} */
 
 .intro {
     text-align: center;
@@ -41,13 +45,13 @@ body {
 #AboutMe{
     color:black;
 }
-.introBG {
+/* .introBG {
     background: #333333DD;
     border-radius: 10px;
     max-width: 300px;
     margin: auto;
     margin-top: -75%;
-}
+} */
 
 .headshot{
     border-radius: 10px;
@@ -61,7 +65,7 @@ body {
 }
 
 .footerContent{
-    padding-top: 50px;
+    padding-top: 10px;
     position: relative;
 }
 
@@ -93,3 +97,23 @@ body {
         width: 100%;
         height: 100%;
       }*/
+
+.carousel-caption{
+    background: #666666c2;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+.carousel-caption p{
+    margin-bottom:2px;
+    font-size: 12px;
+}
+.carousel-caption h6{
+    margin-bottom:2px;
+    font-size: 15px;
+}
+.carousel-caption:hover{
+    color:white;
+}
+.carousel-caption a:hover{
+    color:white; 
+}

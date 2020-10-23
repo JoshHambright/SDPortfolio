@@ -5,15 +5,15 @@ body {
 
 }
 
-/* Scrolled Nav Bar color and transition */
+/* Scrolled Nav Bar color and transition 
 .navbar-fixed-top.scrolled {
     background-color: black !important;
     transition      : background-color 200ms linear;
-}
+}*/
 
 
 #splash {
-    background-image     : url("assets/hayloft.jpg");
+    background-image     : url("assets/hayloft2.jpg");
     /*background-size    : auto;
     background-repeat    : no-repeat;
 
@@ -55,14 +55,34 @@ body {
     margin-top: 20px;
 }
 
+#portfolioCarousel{
+    display: block;
+    margin: 0 auto;
+}
 
 .footerContent{
-    margin-top: 50px;
+    padding-top: 50px;
     position: relative;
 }
 
 .footerIMG{
     width: 25px;
+}
+
+#ContactMe{
+    padding-top: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.footerIMG:hover{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .Absolute-Center {
     margin: 50% auto 50% auto;

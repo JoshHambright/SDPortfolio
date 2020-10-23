@@ -9,177 +9,235 @@
     <link rel="stylesheet" href="main.css">
 
     <title>Josh Hambright - Software Developer</title>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <div class="container-fluid">
-        <!-- Splash and Navigation -->
-        <div class="container-fluid" style="background-color: #333333; " id="splash">
-            <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #333333DD; border:none;">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="#splash" class="navbar-brand">Josh Hambright</a>
-                    </div>
-                    <div>
-                        <div class="collapse navbar-collapse" id="myNavbar">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#AboutMe">About Me</a></li>
-                                <li><a href="#Skills">Skills</a></li>
-                                <li><a href="#Portfolio">Portfolio</a></li>
-                                <li><a href="#ContactMe">Contact Me</a></li>
-                            </ul>
-                        </div>
-                        <!-- Add Scroll spy to navigation-->
-            </nav>
-            <div class="container">
-                <!-- <div class="introBG container"> -->
-                <div class="intro introBG">
-                    <h1 id="introName">Josh Hambright</h1>
-                    <p>Software devloper</p>
-                </div>
-                <!--</div>-->
+<body data-spy="scroll" data-target="#navbar2" data-offset="50">
+    <!-- Splash and Navigation -->
+
+    <!-- <nav id="navbar2" class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand" href="#">Josh Hambright</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#fat">@fat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mdo">@mdo</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#one">one</a>
+              <a class="dropdown-item" href="#two">two</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#three">three</a>
             </div>
-        </div>
-        <!-- About me -->
-        <div id="AboutMe" class="container-fluid" style="background-color:#444444; padding-bottom: 30px">
-            <div class="container ">
-                <H1 style="text-align: center;">About Me</H1>
-                <div class="row align-items-center">
-                    <div class="col-sm-4" style="">Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Cumque minus vel, ducimus voluptatibus est optio sequi nobis magnam similique facere laborum,
-                        harum
-                        repudiandae. Aspernatur vel eaque enim, iste labore minus!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis unde? Dolor ad fugiat, in
-                        odio ea reprehenderit est perspiciatis animi reiciendis dolore maiores earum incidunt, natus
-                        ipsam qui quis?
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dicta sunt iure repellendus
-                        repellat qui, aut quidem voluptas illo consectetur similique necessitatibus natus quisquam
-                        veritatis ipsam blanditiis facilis ex magni!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit.
-                        Cumque minus vel, ducimus voluptatibus est optio sequi nobis magnam similique facere laborum,
-                        harum
-                        repudiandae. Aspernatur vel eaque enim, iste labore minus!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis unde? Dolor ad fugiat, in
-                        odio ea reprehenderit est perspiciatis animi reiciendis dolore maiores earum incidunt, natus
-                        ipsam qui quis?
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dicta sunt iure repellendus
-                        repellat qui, aut quidem voluptas illo consectetur similique necessitatibus natus quisquam
-                        veritatis ipsam blanditiis facilis ex magni!
-                    </div>
-                    <div class="col-sm-4 align-items-center" style="background:">Lorem ipsum dolor sit, amet consectetur
-                        adipisicing
-                        elit. Eligendi delectus sapiente tempora at nostrum aperiam dignissimos ea, commodi esse dolore
-                        doloremque sed nulla mollitia id omnis a voluptates exercitationem quia?</div>
-                    <div class="col-sm-4">
-                        <center><img src="assets/headshot.jpg" alt=""
-                                class="media-object content-justify-center headshot" style="width:300px"></center>
-                    </div>
-                </div>
+          </li>
+        </ul>
+      </nav> -->
+    <!-- <nav id="navBar" class="navbar navbar-inverse navbar-fixed-top" style="background-color: #333333DD; border:none;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#splash" class="navbar-brand">Josh Hambright</a>
             </div>
-        </div>
-
-        <!-- Skills -->
-        <div id="Skills" class="container-fluid" style="background-color: #555555; height:500px">
-            <div class="container">
-                <H1 style="text-align: center;">Skills</h1>
-
-            </div>
-
-        </div>
-
-        <!-- Portfolio -->
-        <div id="Portfolio" class="container-fluid" style="background-color:#666666; height:600px">
-
-            <H1 style="text-align: center;">Portfolio</h1>
-            <div class="container">
-
-
-                <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
-
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#portfolioCarousel" data-slide-to="1"></li>
-                        <li data-target="#portfolioCarousel" data-slide-to="2"></li>
-                        <li data-target="#portfolioCarousel" data-slide-to="3"></li>
-                        <li data-target="#portfolioCarousel" data-slide-to="4"></li>
-                        <li data-target="#portfolioCarousel" data-slide-to="5"></li>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#AboutMe">About Me</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#ContactMe">Contact Me</a></li>
                     </ul>
+                </div>
+            
+    </nav> -->
 
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/cssCreature.png" alt="CSS Creature Screenshot" width="400" width="400">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/spottedPigFarmScreenShot.png" alt="Spotted Pig Farm" width="400"
-                                width="400">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/twotruthonelie.png" alt="Two Truths One Lie Project" width="400"
-                                width="400">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/placeholder2.png" alt="Blue Badge" width="400" width="400">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/placeholder3.png" alt="Red Badge" width="400" width="400">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/placeholder.png" alt="Business Challenge" width="400" width="400">
+    <div class="container-fluid" style="background-color: #333333; " id="splash">
+        <div class="container">
+            <!-- <div class="introBG container"> -->
+            <div class="intro introBG">
+                <h1 id="introName">Josh Hambright</h1>
+                <p>Software devloper</p>
+            </div>
+            <!--</div>-->
+        </div>
+    </div>
+    <!-- About me -->
+    <div id="AboutMe" class="container-fluid" style="background-color:#444444; padding-bottom: 30px">
+        <div class="container ">
+            <H1 style="text-align: center;">About Me</H1>
+            <div class="row align-items-center">
+                <div class="col-sm-4" style="">Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Cumque minus vel, ducimus voluptatibus est optio sequi nobis magnam similique facere laborum,
+                    harum
+                    repudiandae. Aspernatur vel eaque enim, iste labore minus!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis unde? Dolor ad fugiat, in
+                    odio ea reprehenderit est perspiciatis animi reiciendis dolore maiores earum incidunt, natus
+                    ipsam qui quis?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dicta sunt iure repellendus
+                    repellat qui, aut quidem voluptas illo consectetur similique necessitatibus natus quisquam
+                    veritatis ipsam blanditiis facilis ex magni!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Cumque minus vel, ducimus voluptatibus est optio sequi nobis magnam similique facere laborum,
+                    harum
+                    repudiandae. Aspernatur vel eaque enim, iste labore minus!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis unde? Dolor ad fugiat, in
+                    odio ea reprehenderit est perspiciatis animi reiciendis dolore maiores earum incidunt, natus
+                    ipsam qui quis?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dicta sunt iure repellendus
+                    repellat qui, aut quidem voluptas illo consectetur similique necessitatibus natus quisquam
+                    veritatis ipsam blanditiis facilis ex magni!
+                </div>
+                <div class="col-sm-4 align-items-center" style="background:">Lorem ipsum dolor sit, amet consectetur
+                    adipisicing
+                    elit. Eligendi delectus sapiente tempora at nostrum aperiam dignissimos ea, commodi esse dolore
+                    doloremque sed nulla mollitia id omnis a voluptates exercitationem quia?</div>
+                <div class="col-sm-4">
+                    <center><img src="assets/headshot.jpg" alt="" class="media-object content-justify-center headshot"
+                            style="width:300px"></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div id="Skills" class="container-fluid" style="background-color: #555555; height:500px">
+        <div class="container">
+            <H1 style="text-align: center;">Skills</h1>
+
+        </div>
+
+    </div>
+
+    <!-- Portfolio -->
+    <div id="Portfolio" class="container-fluid" style="background-color:#666666; height:500px">
+
+        <H1 style="text-align: center;">Portfolio</h1>
+        <div class="container">
+
+
+            <div id="portfolioCarousel" class="carousel slide" data-ride="carousel" style="width:400px; height:450px">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#portfolioCarousel" data-slide-to="1"></li>
+                    <li data-target="#portfolioCarousel" data-slide-to="2"></li>
+                    <li data-target="#portfolioCarousel" data-slide-to="3"></li>
+                    <li data-target="#portfolioCarousel" data-slide-to="4"></li>
+                    <li data-target="#portfolioCarousel" data-slide-to="5"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/cssCreature.png" alt="CSS Creature Screenshot" width="400" width="400"
+                            class="portfolioIMG">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/spottedPigFarmScreenShot.png" alt="Spotted Pig Farm" width="400" width="400"
+                            class="portfolioIMG">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/twotruthonelie.png" alt="Two Truths One Lie Project" width="400" width="400"
+                            class="portfolioIMG">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/placeholder2.png" alt="Blue Badge" width="400" width="400"
+                            class="portfolioIMG">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/placeholder3.png" alt="Red Badge" width="400" width="400" class="portfolioIMG">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/placeholder.png" alt="Business Challenge" width="400" width="400"
+                            class="portfolioIMG">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#portfolioCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#portfolioCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="ContactMe" class="container-fluid" style="background-color:#777777; height:500px">
+        <div class="container">
+            <H1 style="text-align: center;">Contact Me</h1>
+            <div class="container" style="width: 500px">
+                <form>
+                    <div class="form-group">
+                        <label for="nameField">Your Name</label>
+                        <input type="text" id="nameField" class="form-control" aria-describedby="nameHelp"
+                            placeholder="John Q. Public">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailField">Email address</label>
+                        <input type="email" class="form-control" id="emailField" aria-describedby="emailHelp"
+                            placeholder="importantperson@importantdomain.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="messageField">Message</label>
+                        <textarea rows="5" class="form-control" id="messageField"
+                            aria-describedby="messageHelp"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <button type="submit" class="btn btn-dark ">Submit</button>
                         </div>
                     </div>
-
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#portfolioCarousel" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#portfolioCarousel" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Contact -->
-        <div id="ContactMe" class="container-fluid" style="background-color:#777777; height:500px">
-            <div class="container">
-                <H1 style="text-align: center;">Contact Me</h1>
-
+                </form>
             </div>
 
-        </div>
-
-        <!-- Footer -->
-        <div id="Footer" class="container-fluid" style="background-color:goldenrod; height:150px;">
-
-            <!-- <div class="row h-100 justify-content-center align-items-center"> -->
-            <center>
-                <div class=" footerContent Absolute-Center">
-                    <h4>&copy;2020 Josh Hambright</h4>
-                    <div class="footerIcons center">
-                        <a href="https://github.com/JoshHambright" target="new"><img src="assets/github.png"
-                                class="footerIMG"></a>
-
-
-                        <a href="https://www.linkedin.com/in/josh-hambright" target="new"> <img
-                                src="assets/linkedin.png" class="footerIMG"></a></div>
-                </div>
-            </center>
-            <!-- </div> -->
 
 
         </div>
 
-        <!-- Javascript for Scroll sticking to top and fading in-->
+    </div>
+
+    <!-- Footer -->
+    <div id="Footer" class="container-fluid" style="background-color:goldenrod; height:150px;">
+
+        <!-- <div class="row h-100 justify-content-center align-items-center"> -->
+        <center>
+            <div class=" footerContent">
+                <h4>&copy;2020 Josh Hambright</h4>
+                <div class="footerIcons center">
+                    <a href="https://github.com/JoshHambright" target="new"><img src="assets/github.png"
+                            class="footerIMG"></a>
+
+
+                    <a href="https://www.linkedin.com/in/josh-hambright" target="new"> <img src="assets/linkedin.png"
+                            class="footerIMG"></a></div>
+            </div>
+        </center>
+        <!-- </div> -->
+
+
+    </div>
+
+    <!-- Javascript for Scroll sticking to top and fading in-->
     </div>
     <!-- <script>
         $(function () {

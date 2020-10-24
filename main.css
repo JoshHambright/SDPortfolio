@@ -9,6 +9,10 @@ body {
 
 }
 
+.sections{
+    background-color:#777777d5;
+}
+
 /*Scrolled Nav Bar color and transition */
 .navbar-sticky-top.scrolled {
     background-color: black !important;

@@ -69,6 +69,13 @@ body {
     display: block;
     margin: 0 auto;
 }
+.visitGithub h4{
+ font-size: 20px;
+}
+.visitGithub a{
+    color: black;
+    font-weight: bolder;
+}
 
 .footerContent{
     padding-top: 10px;
@@ -76,7 +83,7 @@ body {
 }
 
 .footerIMG{
-    width: 25px;
+    width: 35px;
 }
 
 #ContactMe{
@@ -86,7 +93,9 @@ body {
 .text-center{
     text-align: center;
 }
-
+.footerContent h4{
+    font-size: 12px;
+}
 .footerIMG:hover{
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -163,4 +172,8 @@ body {
 .skillLink, .skillLink a, .skillLink:hover{
     font-size: 25px;
     color: black;
+}
+
+.card-body{
+    background-color: #777777;
 }

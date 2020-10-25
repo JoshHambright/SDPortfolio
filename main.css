@@ -14,11 +14,38 @@ body {
 }
 
 /*Scrolled Nav Bar color and transition */
-.navbar-sticky-top.scrolled {
+.sticky-top.scrolled {
     background-color: black !important;
     transition      : background-color 200ms linear;
 }
 
+#navbar {
+    background-color: #333333De !important;
+}
+#navbar.stickytop.scrolled{
+    background-color: #333333 !important;
+
+}
+
+.nav-link {
+    color: white !important;
+    
+  }
+  .nav-link.active {
+    /*color: goldenrod !important;*/
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+  }
+  .nav-brand.active {
+    color: goldenrod !important;
+    font-weight: bold;
+    text-transform: uppercase !important;
+}
+  .navbar-nav .nav-item.active .nav-link,
+  .navbar-nav .nav-item:hover .nav-link {
+      color: goldenrod !important;
+     /* font-weight: bold;*/
+  }
 
 /* #splash {
     background-image     : url("assets/hayloft2.jpg");
@@ -156,13 +183,14 @@ body {
 
 
 .card{
-    background: #464646dc;
+    background: #777777dc;
     border:0;
 }
 
 .skillIcon{
-    width: 40px;
+    width: 48px;
     margin-right: 5px;
+    padding: 0;
 }
 .centerStuff{
     margin-right: auto;
@@ -170,7 +198,7 @@ body {
     display: block;
 }
 .card-header{
-    text-align: center;
+    text-align: start;
 }
 
 .skillLink, .skillLink a, .skillLink:hover{

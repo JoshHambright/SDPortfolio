@@ -1,66 +1,71 @@
+/* Body and general styles*/
+
 body {
-    background-color: black;
-    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+    background-color     : black;
+    font-family          : Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
     background-size      : cover;
     background-repeat    : no-repeat;
     background-attachment: fixed;
-    width: 100%;
+    width                : 100%;
     background-image     : url("assets/hayloft2.jpg");
 
 }
 
-.sections{
-    background-color:#777777d5;
+.Absolute-Center {
+    margin  : 50% auto 50% auto;
+    position: relative;
 }
 
-/*Scrolled Nav Bar color and transition */
-.sticky-top.scrolled {
-    background-color: black !important;
-    transition      : background-color 200ms linear;
+.sections {
+    background-color: #777777d5;
 }
+
+.centerStuff {
+    margin-right: auto;
+    margin-left : auto;
+    display     : block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Nav Bar */
 
 #navbar {
     background-color: #333333De !important;
 }
-#navbar.stickytop.scrolled{
+
+/* #navbar.stickytop.scrolled{
     background-color: #333333 !important;
 
-}
+} */
 
 .nav-link {
     color: white !important;
-    
-  }
-  .nav-link.active {
+
+}
+
+.nav-link.active {
     /*color: goldenrod !important;*/
     font-weight: bold;
     text-shadow: 2px 2px 4px black;
-  }
-  .nav-brand.active {
-    color: goldenrod !important;
-    font-weight: bold;
+}
+
+.nav-brand.active {
+    color         : goldenrod !important;
+    font-weight   : bold;
     text-transform: uppercase !important;
 }
-  .navbar-nav .nav-item.active .nav-link,
-  .navbar-nav .nav-item:hover .nav-link {
-      color: goldenrod !important;
-     /* font-weight: bold;*/
-  }
 
-/* #splash {
-    background-image     : url("assets/hayloft2.jpg");
-    /*background-size    : auto;
-    background-repeat    : no-repeat;
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color         : goldenrod !important;
+    /* font-weight: bold;*/
+}
 
-    background-position  : left 0px;
-    background-attachment: fixed 
-    background-size      : contain;
-    background-repeat    : no-repeat;
-    width                : 100%;
-    height               : 0;
-    padding-top          : 75%;
-    /* (img-height / img-width * container-width) 
-} */
+
+/* Header Section */
 
 .intro {
     text-align: center;
@@ -70,142 +75,156 @@ body {
 #introName {
     text-align: center;
     color     : white;
-    
-    
+
+
 }
-#AboutMe{
-    color:black;
-}
-#nameHeader{
-    padding-top: 25px;
+
+#nameHeader {
+    padding-top   : 25px;
     padding-bottom: 25px;
 }
-/* .introBG {
-    background: #333333DD;
-    border-radius: 10px;
-    max-width: 300px;
-    margin: auto;
-    margin-top: -75%;
-} */
 
-.headshot{
-    border-radius: 10px;
-    box-shadow: 2px 4px 10px black;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    max-width: 250px;
-}
 
-#portfolioCarousel{
-    display: block;
-    margin: 0 auto;
-}
-.visitGithub h4{
- font-size: 20px;
-}
-.visitGithub a{
+
+/* About Me */
+#AboutMe {
     color: black;
-    font-weight: bolder;
-}
-
-.footerContent{
-    padding-top: 10px;
-    position: relative;
-}
-
-.footerIMG{
-    width: 35px;
-}
-
-#ContactMe{
-    padding-top: 20px;
-}
-
-.text-center{
-    text-align: center;
-}
-.footerContent h4{
-    font-size: 12px;
-}
-.footerIMG:hover{
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-.Absolute-Center {
-    margin: 50% auto 50% auto;
-    position: relative;
-  }
-
-    /* Make the image fully responsive 
-        width: 100%;
-        height: 100%;
-      }*/
-
-
-.carousel-caption{
-    background: #666666c2;
-    padding-top: 5px;
-    padding-bottom: 2px;
-}
-.carousel-caption p{
-    margin-bottom:10px;
-    font-size: 12px;
-}
-.carousel-caption h6{
-    margin-bottom:2px;
-    font-size: 15px;
-}
-.carousel-caption:hover{
-    color:white;
-}
-.carousel-caption a:hover{
-    color:white; 
-}
-
-.formCenter{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 600px;
-}
-
-.form-control:focus{border-color: black;  box-shadow: 2px 2px 8px black; -webkit-box-shadow: 2px 2px 8px black;} 
-.has-error .form-control:focus{box-shadow: none; -webkit-box-shadow: none;}
-
-.carousel-px-wide{
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
-.card{
+.headshot {
+    border-radius: 10px;
+    box-shadow   : 2px 4px 10px black;
+    margin-top   : 5px;
+    margin-bottom: 25px;
+    max-width    : 250px;
+}
+
+
+
+
+/* Skills */
+.card {
     background: #777777dc;
-    border:0;
+    border    : 0;
 }
 
-.skillIcon{
-    width: 48px;
+.skillIcon {
+    width       : 48px;
     margin-right: 5px;
-    padding: 0;
+    padding     : 0;
 }
-.centerStuff{
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-}
-.card-header{
+
+.card-header {
     text-align: start;
 }
 
-.skillLink, .skillLink a, .skillLink:hover{
+.skillLink,
+.skillLink a,
+.skillLink:hover {
     font-size: 25px;
-    color: black;
+    color    : black;
 }
 
-.card-body{
+.card-body {
     background-color: #777777;
+}
+
+
+.visitGithub h4 {
+    font-size: 20px;
+}
+
+.visitGithub a {
+    color      : black;
+    font-weight: bolder;
+}
+
+
+
+
+/* Portfolio */
+#portfolioCarousel {
+    display: block;
+    margin : 0 auto;
+}
+
+.carousel-caption {
+    background    : #666666c2;
+    padding-top   : 5px;
+    padding-bottom: 2px;
+}
+
+.carousel-caption p {
+    margin-bottom: 10px;
+    font-size    : 12px;
+}
+
+.carousel-caption h6 {
+    margin-bottom: 2px;
+    font-size    : 15px;
+}
+
+.carousel-caption:hover {
+    color: white;
+}
+
+.carousel-caption a:hover {
+    color: white;
+}
+
+.carousel-px-wide {
+    max-width   : 400px;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+
+
+/* Contact */
+#ContactMe {
+    padding-top: 20px;
+}
+
+.formCenter {
+    margin-left : auto;
+    margin-right: auto;
+    display     : block;
+    max-width   : 600px;
+}
+
+.form-control:focus {
+    border-color      : black;
+    box-shadow        : 2px 2px 8px black;
+    -webkit-box-shadow: 2px 2px 8px black;
+}
+
+.has-error .form-control:focus {
+    box-shadow        : none;
+    -webkit-box-shadow: none;
+}
+
+
+
+/* Footer */
+.footerContent h4 {
+    font-size: 12px;
+}
+
+.footerIMG:hover {
+    -webkit-transform: rotate(180deg);
+    -moz-transform   : rotate(180deg);
+    -o-transform     : rotate(180deg);
+    -ms-transform    : rotate(180deg);
+    transform        : rotate(180deg);
+}
+
+
+.footerContent {
+    padding-top: 10px;
+    position   : relative;
+}
+
+.footerIMG {
+    width: 35px;
 }
